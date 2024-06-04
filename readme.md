@@ -9,8 +9,3 @@
 - Azure CLI installed. 
 - Existing Azure service principal ([guide here](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret)).    
 
-
-
-
-
-
