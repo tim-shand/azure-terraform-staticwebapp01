@@ -3,9 +3,12 @@
 
 ## Overview
 - Create an Azure resource group.
-
+- Create Static Web App. 
 
 ## Requirements
+- Existing Azure service principal ([guide here.](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret)).    
+
+
 
 
 
