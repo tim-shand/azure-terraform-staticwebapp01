@@ -6,7 +6,7 @@ tags = { environment = "dev" }
 webappsettings = {
     repositoryUrl = "https://github.com/ts91nz/azure-terraform-staticwebapp01"
     branch = "main"
-    repositoryToken = "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"
+    repositoryToken = ""
     appLocation = "./webapp"
     apiLocation = ""
 }
