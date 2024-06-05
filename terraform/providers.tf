@@ -11,10 +11,10 @@ provider "azurerm" {
     subscription_id         = "[snip]" // Target Azure subscription to work with.
     
     # PowerShell
-    $env:ARM_CLIENT_ID = "d836f655-984f-405b-9c9c-54724947ae9c"
-    $env:ARM_CLIENT_SECRET = "RUr8Q~Xtxtu-DLQwZJRuBrgyeckxGlKgbk8DyaSz"
-    $env:ARM_TENANT_ID = "5e068550-8d94-4aca-8f9f-a71c5b9a0c19"
-    $env:ARM_SUBSCRIPTION_ID = "9f3de13e-bb30-4183-ad65-50d4a0ab162e"
+    $env:ARM_CLIENT_ID = "[snip]"
+    $env:ARM_CLIENT_SECRET = "[snip]"
+    $env:ARM_TENANT_ID = "[snip]"
+    $env:ARM_SUBSCRIPTION_ID = "[snip]"
 
     # To view
     gci env:ARM_*
