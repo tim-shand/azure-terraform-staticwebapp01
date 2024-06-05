@@ -1,0 +1,43 @@
+/* CSS */
+.page-content {
+  padding: calc(70px + 24px) calc(24px / 2) 60px calc(24px / 2);
+}
+
+.main-content {
+  margin-left: 240px;
+  overflow: hidden;
+}
+.main-content .content {
+  padding: 0 15px 10px 15px;
+  margin-top: 70px;
+}
+
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: darkslategray;
+}
+
+h1 {
+    color: #c5c5c5;
+    font-family: 'Trebuchet MS';
+    font-size:xx-large
+}
+
+h2 {
+    color: #c5c5c5;
+    font-family: 'Trebuchet MS';
+    font-size: x-large;
+}
+
+p {
+    color: #ffffff;
+    font-family: 'Trebuchet MS';
+    font-size: large;
+}
+
+.timer {
+    color: #ffffff;
+    font-family: 'Segoe UI';
+    font-size: xx-large;
+}

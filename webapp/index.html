@@ -4,26 +4,39 @@
         <meta charset="utf-8" />
         <title>TS-Testing</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="tshand.com" name="description" />
-        <link rel="shortcut icon" href="assets/images/Logo_TS_90x90.png">  
+        <meta content="Test Page" name="description" />
         <!-- App/Bootstrap CSS -->
-        <link href="css/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-        <link href="css/app.css" id="app-style" rel="stylesheet" type="text/css" />
+        <link href="app.css" id="app-style" rel="stylesheet" type="text/css" />
     </head>
-	<body data-topbar="dark" data-layout="horizontal">
+	<body data-topbar="dark">
 		<div class="main-content"> <!-- Main Content -->
 			<div class="page-content"> <!-- Page Content -->
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-12">
-						
-							<h1>Test Web App 01</h1>
+						<div class="col-12">						
+							<h1>Test Web App</h1>
 							<p>This is a test web app.</p>
-						
+							</br>
+							<h2>Current Date Time</h2>
+							<div id="dateTimeObj" class="timer"></div>
+							</br>				
 						</div>
 					</div>                       
 				</div>                    
 			</div> <!-- / Page Content -->	
 		</div> <!-- / Main Content -->		
 	</body>
+	<!-- Javascript -->
+	<script>
+		// Date-Time Display: Dynamic
+		function displayClock(){
+			var ztime = new Date().toLocaleTimeString();
+			var zdate = new Date().toLocaleDateString();			  
+			var dayName = new Date().toLocaleString('en-GB', {weekday:'short'})	
+			var dateMonthYear = new Date().toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'}).replace(/ /g, '-');
+			document.getElementById('dateTimeObj').innerHTML=dayName +' '+ dateMonthYear +' '+ztime ;
+			setTimeout(displayClock, 1000); 
+		}
+		window.onload = displayClock();
+	</script>
 </html>
