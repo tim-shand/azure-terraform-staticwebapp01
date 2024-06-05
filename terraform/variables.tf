@@ -22,5 +22,5 @@ variable "tags" {
 variable "webappsettings" {
     type        = map(string)
     nullable    = true
-    description = "Define Azure web app settings."
+    description = "Define Azure web app settings ('Environment Variables')."
 }
