@@ -2,16 +2,25 @@
 // Example: Define the default location/region for Azure resources to be created in. 
 
 variable "project_name" {
-  description = "Project Name, used for consistent naming methods."
-  default = "basicwebapp01"
+    type        = string
+    nullable    = false
+    description = "Project Name, used for consistent naming methods."
 }
 
-variable "az_location" {
-  description = "Azure region in which to create the resources."
-  default = "eastasia"
+variable "location" {
+    type        = string
+    nullable    = false
+    description = "Azure region in which to create the resources."
 }
 
-variable "az_tags" {
-  description = "Tags used in Azure to identify related resources."
-  default = { environment = "dev" }
+variable "tags" {
+    type        = map(string)
+    nullable    = true
+    description = "Tags used in Azure to identify related resources."
+}
+
+variable "webappsettings" {
+    type        = map(string)
+    nullable    = true
+    description = "Define Azure web app settings."
 }
