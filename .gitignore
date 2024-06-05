@@ -3,6 +3,7 @@
 .az-client-secret
 *secret*
 id_rsa*
+.providers.tf
 
 # Local .terraform directories.
 terraform/.terraform

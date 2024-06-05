@@ -9,3 +9,20 @@
 - Azure CLI installed. 
 - Existing Azure service principal ([guide here](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret)).    
 
+## Execution
+```
+# Initialize Terraform
+> terraform init
+
+# Validate Terraform configuration files
+> terraform validate
+
+# Format Terraform configuration files
+> terraform fmt
+
+# Review the terraform plan
+> terraform plan 
+
+# Create Resources
+> terraform apply -auto-approve
+```
