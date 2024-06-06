@@ -4,7 +4,7 @@ project_name  = "basicwebapp01"
 location = "eastasia"
 tags = { environment = "dev" }
 webappsettings = {
-    repositoryUrl = "https://github.com/ts91nz/azure-terraform-staticwebapp01"
+    repositoryUrl = "https://github.com/tim-shand/azure-terraform-staticwebapp01"
     branch = "main"
     appLocation = "./webapp"
     apiLocation = ""
